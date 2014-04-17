@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Social Mart Inside</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top custom-bgr" role="navigation">
+      <div class="container">
+        <div class="navbar-header custom-nav-hdr">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+          <p class="navbar-text hidden-xs">Простой выбор сложных товаров</p>
+           <button id="toggleMenu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#right-custom-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <ol class="breadcrumb pull-left">
+          <li><a href="#" class="arrow-gray">Мобильные телефоны</a></li>
+          <li class="active">Apple iPhone 5 16GB</li>
+        </ol>
+        <div class="pull-right collapse navbar-collapse right-custom-nav">
+          <ul>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#reviews">Отзывы и теги</a></li>
+            <li><a href="#similar">Похожие товары</a></li>
+          </ul>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+
+
+        <div class="col-md-12">
+          <div class="row">
+            
+            <div class="col-md-10 col-sm-10 col-xs-9">
+              <h1 class="title">Apple iPhone 5 16GB</h1>
+              <div class="result-rank result-rank-sm">
+                <a class="btn btn-lg btn-wb">
+                  <span class="btn btn-lg btn-success">
+                    9.6
+                    <small>SM rating</small>
+                  </span>
+                </a>
+                <p>253 отзыва</p>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                  <ul class="preview_photo">
+                    <li><a href="#" data-img="./img/phone6.jpg"><img src="./img/phone6.jpg" alt=""></a></li>
+                    <li><a href="#" data-img="./img/phone6.jpg"><img src="./img/gal1.jpg" alt=""></a></li>
+                    <li><a href="#" data-img="./img/phone6.jpg"><img src="./img/gal3.jpg" alt=""></a></li>
+                    <li><a href="#" data-img="./img/phone6.jpg"><img src="./img/gal4.jpg" alt=""></a></li>
+                  </ul>
+                  <a href="#" class="big_preview">
+                    <img src="./img/phone6.jpg" class="img-responsive" alt="">
+                  </a>
+                </div>
+                <div class="col-md-8 col-sm-7 col-xs-12 gadget_description">
+                  <h4>Цена от <strong>25 620 <span class="rouble">Р</span></strong> до <strong>25 620 <span class="rouble">Р</span></strong></h4>
+                  <ul>
+                    <li><span>смартфон, iOS 7</span></li>
+                    <li><span>сенсорный экран мультитач (емкостный)</span></li>
+                    <li><span>диагональ экрана 4", разрешение 640x1136</span></li>
+                    <li><span>камера 8 МП, светодиодная вспышка, автофокус</span></li>
+                    <li><span>память 64 Гб, без слота для карт памяти</span></li>
+                    <li><span>поддержка Bluetooth, Wi-Fi, 3G, LTE, GPS, ГЛОНАСС</span></li>
+                    <li><span>вес 112 г, ШxВxТ 58.60x123.80x7.60 мм, акк. 1560 мАч</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2  col-xs-3 result-rank result-rank-big">
+              <a class="btn btn-lg btn-wb">
+                <span class="btn btn-lg btn-success">
+                  9.6
+                  <small>SM rating</small>
+                </span>
+              </a>
+              <p>253 отзыва</p>
+            </div>
+          </div><!--/row-->
+
+          <div class="row">
+            <div class="col-md-12 full-width">
+
+              <div class="top-table">
+              <table class="table table-condensed compare-head" id="price">
+                <thead>
+                  <tr>
+                    <th class="col-md-4 popover-width">
+                      <p>Цены в городе <button id="change-sity">Москва (95)</button></p>
+                      <div id="change-sity-content" class="hidden">
+                        <div class="change-sity-content">
+                          <h4>Выберите город</h4>
+                          <span type="button" class="close close-change-sity">&times;</span>
+                          <div class="clearfix"></div>
+                          <form class="form-inline search-sity" role="form">
+                            <div class="form-group">
+                              <input type="text" class="form-control input-sm" id="sity" placeholder="Поиск города...">
+                              <span class="lupa"><i class="glyphicon glyphicon-search"></i></span>
+                            </div>
+                          </form>
+                          <ul>
+                            <li class="active">Москва</li>
+                            <li>Санкт-Петербург</li>
+                            <li>Оренбург</li>
+                            <li>Екатеринбург</li>
+                            <li>Владивосток</li>
+                            <li>Сочи</li>
+                            <li>Казань</li>
+                            <li>Оренбург </li>
+                            <li>Екатеринбург</li>
+                            <li>Владивосток</li>
+                            <li>Сочи</li>
+                            <li>Казань</li>
+                            <li>Санкт-Петербург</li>
+                            <li>Оренбург</li>
+                            <li>Екатеринбург</li>
+                            <li>Владивосток</li>
+                            <li>Сочи</li>
+                            <li>Казань</li>
+                            <li>Оренбург </li>
+                            <li>Екатеринбург</li>
+                            <li>Владивосток</li>
+                            <li>Сочи</li>
+                            <li>Казань</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </th>
+                    <th class="col-md-3">Рейтинг</th>
+                    <th class="col-md-2">Доставка</th>
+                    <th class="col-md-2">Цена</th>
+                    <th class="col-md-1"><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></th>
+                  </tr>
+                </thead>
+              </table>
+              </div>
+              <div class="fix-height">
+                <table class="table table-hover table-condensed">
+                  <tbody>
+                    <tr>
+                      <td class="col-md-4">OZON.ru
+                        <div class="rating set4">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div></td>
+                      <td class="col-md-3">
+                        <div class="rating set4">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td class="col-md-2">Бесплатно</td>
+                      <td class="col-md-2"><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td class="col-md-1"><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Enter
+                        <div class="rating set1">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div></td>
+                      <td>
+                        <div class="rating set1">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>270 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>СВЯЗНОЙ Петербург
+                        <div class="rating set2">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div></td>
+                      <td>
+                        <div class="rating set2">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>300 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Белый Ветер</td>
+                      <td>
+                        <div class="rating set5">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>500 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Media Markt</td>
+                      <td>
+                        <div class="rating set5">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>200 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>MyTechnics</td>
+                      <td>
+                        <div class="rating set5">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>300 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td class="col-md-4">OZON.ru</td>
+                      <td class="col-md-3">
+                        <div class="rating set4">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td class="col-md-2">Бесплатно</td>
+                      <td class="col-md-2"><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td class="col-md-1"><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Enter</td>
+                      <td>
+                        <div class="rating set1">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>270 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>СВЯЗНОЙ Петербург</td>
+                      <td>
+                        <div class="rating set2">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>300 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Белый Ветер</td>
+                      <td>
+                        <div class="rating set5">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>500 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Media Markt</td>
+                      <td>
+                        <div class="rating set5">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>200 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td>MyTechnics</td>
+                      <td>
+                        <div class="rating set5">
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                          <i class="glyphicon glyphicon-star"></i>
+                        </div>
+                      </td>
+                      <td>300 <span class="rouble">р</span></td>
+                      <td><h3>7 500 <span class="rouble">р</span></h3></td>
+                      <td><a href="#" class="btn btn-success"><span>Купить</span><i class="glyphicon glyphicon-shopping-cart"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="pull-right from-content"><small>Данные – <a href="#">Яндекс.Маркет</a></small></p>
+            </div>
+          </div>
+
+          <div class="row tabs-row">
+            <div class="col-md-12 full-width">
+              <ul class="nav nav-tabs main-tabs" id="reviews">
+                <li class="active"><a href="#home" data-toggle="tab">Отзывы <span>покупателей</span></a></li>
+                <li><a href="#tags" id="tag_tab" data-toggle="tab">Популярные теги <span>покупателей</span></a></li>
+              </ul>
+              <div class="tab-content tab-root-container">
+                <div class="tab-pane first-lvl active" id="home">
+
+                  <!-- tabs left -->                
+                  <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs col-md-6 col-sm-6 kind-of-review">
+                      <li class="active state9"><a href="#a" data-toggle="tab">
+                          Общий рейтинг <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%;"></div>
+                          </div>
+                          <span class="result"><em>91</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state7"><a href="#b" data-toggle="tab">
+                          Удобство <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                          </div>
+                          <span class="result"><em>70</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state6"><a href="#c" data-toggle="tab">
+                          Надежность <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100" style="width: 64%;"></div>
+                          </div>
+                          <span class="result"><em>64</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state8"><a href="#d" data-toggle="tab">
+                          Общий рейтинг <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%;"></div>
+                          </div>
+                          <span class="result"><em>82</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state7"><a href="#e" data-toggle="tab">
+                          Удобство <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                          </div>
+                          <span class="result"><em>70</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state2"><a href="#f" data-toggle="tab">
+                          Надежность <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%;"></div>
+                          </div>
+                          <span class="result"><em>22</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state6"><a href="#g" data-toggle="tab">
+                          Удобство <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%;"></div>
+                          </div>
+                          <span class="result"><em>62</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state8"><a href="#h" data-toggle="tab">
+                          Общий рейтинг <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;"></div>
+                          </div>
+                          <span class="result"><em>88</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                      <li class="state8"><a href="#i" data-toggle="tab">
+                          Общий рейтинг <small>101 отзыв</small>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;"></div>
+                          </div>
+                          <span class="result"><em>86</em></span>
+                          <span class="clearfix"></span>
+                      </a></li>
+                    </ul>
+                    <div class="tab-content col-md-6 col-sm-6 container-review">
+                      <div class="tab-pane active" id="a">
+                        <ul class="list-review">
+                          <li>
+                            <h4>
+                              <img src="img/ava.jpg" width="32" class="img-circle" alt="">
+                              Евгений Федоров
+                            </h4>
+                            <p>
+                              <em>“Скорость, удобная OS, эргономика, приятный внешний вид. Хороший звук динамиков, а наушники из комплекта - просто космос, звук чистейший. Очень удобная, хорошая камера, качество снимков радует...”</em>
+                            </p>
+                            <p>
+                              <span class="pull-left date">26 марта 2014</span>
+                              <span class="pull-right">Отзыв на <a href="ya.ru">Яндекс.Маркет</a></span>
+                            </p>
+                          </li>
+                          <li>
+                            <h4>
+                              <img src="img/ava.jpg" width="32" class="img-circle" alt="">
+                              Федоров Владимир
+                            </h4>
+                            <p>
+                              <em>“Скорость, удобная OS, эргономика, приятный внешний вид. Хороший звук динамиков, а наушники из комплекта - просто космос, звук чистейший. Очень удобная, хорошая камера, качество снимков радует...”</em>
+                            </p>
+                            <p>
+                              <span class="pull-left date">26 марта 2014</span>
+                              <span class="pull-right">Отзыв на <a href="ya.ru">Яндекс.Маркет</a></span>
+                            </p>
+                          </li>
+                          <li>
+                            <h4>
+                              <img src="img/ava.jpg" width="32" class="img-circle" alt="">
+                              Иванов Евгений
+                            </h4>
+                            <p>
+                              <em>“Скорость, удобная OS, эргономика, приятный внешний вид. Хороший звук динамиков, а наушники из комплекта - просто космос, звук чистейший. Очень удобная, хорошая камера, качество снимков радует...”</em>
+                            </p>
+                            <p>
+                              <span class="pull-left date">26 марта 2014</span>
+                              <span class="pull-right">Отзыв на <a href="ya.ru">Яндекс.Маркет</a></span>
+                            </p>
+                          </li>
+                          <li>
+                            <h4>
+                              <img src="img/ava.jpg" width="32" class="img-circle" alt="">
+                              Петров Евгений
+                            </h4>
+                            <p>
+                              <em>“Скорость, удобная OS, эргономика, приятный внешний вид. Хороший звук динамиков, а наушники из комплекта - просто космос, звук чистейший. Очень удобная, хорошая камера, качество снимков радует...”</em>
+                            </p>
+                            <p>
+                              <span class="pull-left date">26 марта 2014</span>
+                              <span class="pull-right">Отзыв на <a href="ya.ru">Яндекс.Маркет</a></span>
+                            </p>
+                          </li>
+                          <li>
+                            <h4>
+                              <img src="img/ava.jpg" width="32" class="img-circle" alt="">
+                              Федоров Евгений
+                            </h4>
+                            <p>
+                              <em>“Скорость, удобная OS, эргономика, приятный внешний вид. Хороший звук динамиков, а наушники из комплекта - просто космос, звук чистейший. Очень удобная, хорошая камера, качество снимков радует...”</em>
+                            </p>
+                            <p>
+                              <span class="pull-left date">26 марта 2014</span>
+                              <span class="pull-right">Отзыв на <a href="ya.ru">Яндекс.Маркет</a></span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane" id="b">B Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+                      <div class="tab-pane" id="c">C Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                      <div class="tab-pane" id="d">D Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+                      <div class="tab-pane" id="e">E Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                      <div class="tab-pane" id="f">F Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+                      <div class="tab-pane" id="g">G Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                      <div class="tab-pane" id="h">H Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                      <div class="tab-pane" id="i">H Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                    </div>
+                  </div>
+                  <!-- /tabs -->
+
+                </div>
+                <div class="tab-pane first-lvl" id="tags">
+                  <div class="row tags">
+                    <div class="col-md-4">
+                      <h3 class="text-center">Для кого подходит</h3>
+                        <script type="text/javascript">
+                            var word_array1 = [
+                              {text: "Для хипстера", weight: 15},
+                              {text: "Для Мужчины", weight: 9, link: "http://jquery.com/"},
+                              {text: "Для блондинки", weight: 6, html: {title: "I can haz any html attribute"}},
+                              {text: "Для ребенка", weight: 7},
+                              {text: "Другу", weight: 7},
+                              {text: "Подруге", weight: 7},
+                              {text: "Мужу", weight: 1},
+                              {text: "Маме", weight: 9},
+                              {text: "Солдату", weight: 3},
+                              {text: "Лунатику", weight: 7},
+                              {text: "Для жены", weight: 5},
+                              {text: "Для любовницы", weight: 3},
+                            ];
+                        </script>
+                      <div class="tag1 tags-cloud"></div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="text-center">Для чего подходит</h3>
+                      <script type="text/javascript">
+                        var word_array2 = [
+                          {text: "Навигация", weight: 15},
+                          {text: "Социальные сети", weight: 20, link: "http://jquery.com/"},
+                          {text: "Серфинг", weight: 6, html: {title: "I can haz any html attribute"}},
+                          {text: "Игры", weight: 7},
+                          {text: "Lorem", weight: 13, link: "https://github.com/lucaong/jQCloud"},
+                          {text: "Ipsum", weight: 10.5, link: "http://jquery.com/"},
+                          {text: "Dolor", weight: 9.4},
+                          {text: "Sit", weight: 8},
+                          {text: "Amet", weight: 6.2},
+                          {text: "Consectetur", weight: 5},
+                          {text: "Adipiscing", weight: 5},
+                          {text: "Elit", weight: 5},
+                          {text: "Nam et", weight: 5},
+                          {text: "Leo", weight: 4},
+                          {text: "Sapien", weight: 4, link: "http://www.lucaongaro.eu/"},
+                          {text: "Pellentesque", weight: 3},
+                          {text: "habitant", weight: 3},
+                          {text: "morbi", weight: 3},
+                          {text: "tristisque", weight: 3},
+                          {text: "senectus", weight: 3},
+                          {text: "et netus", weight: 3},
+                          {text: "et malesuada", weight: 3},
+                          {text: "fames", weight: 2},
+                          {text: "ac turpis", weight: 2},
+                          {text: "ullamcorper", weight: 1},
+                          {text: "id vuluptate ut", weight: 1},
+                          {text: "mattis", weight: 1},
+                          {text: "et nulla", weight: 1},
+                          {text: "Sed", weight: 1},
+                          {text: "Звонить", weight: 5},
+                        ];
+                      </script>
+                      <div class="tag2 tags-cloud"></div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="text-center">Характеристики</h3>
+                      <script type="text/javascript">
+                        var word_array3 = [
+                          {text: "Современный", weight: 15},
+                          {text: "Социальные сети", weight: 10, link: "http://jquery.com/"},
+                          {text: "Стильный", weight: 6, html: {title: "I can haz any html attribute"}},
+                          {text: "Ударостойкий", weight: 7},
+                          {text: "Подруге", weight: 7},
+                          {text: "Мужу", weight: 1},
+                          {text: "Маме", weight: 9},
+                          {text: "Солдату", weight: 3},
+                          {text: "Лунатику", weight: 7},
+                          {text: "Звонить", weight: 5},
+                          {text: "Lorem", weight: 1},
+                          {text: "Dolore", weight: 2},
+                        ];
+                      </script>
+                      <div class="tag3 tags-cloud"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+              <p class="pull-right from-content"><small>Powered by <a href="#">Opiner</a></small></p>
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-sm-12 col-md-12 similar" id="similar">
+              <h3>Похожие товары  <small>(12)</small></h3>
+              <div class="clearfix"></div>
+              <div class="responsive">
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score state8">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">8.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone1.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score state9">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone2.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">HTC ONE</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score state7">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">7.1</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone3.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Samsung Galaxy 2</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score state6">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">6.4</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone4.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score state4">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">4.8</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone1.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score state2">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">2.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone2.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone1.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone2.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone3.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone4.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone1.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone2.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone1.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone2.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone3.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone4.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone1.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumbnail">
+                    <p class="text-center final-score">
+                      <a class="btn btn-lg"><span class="btn btn-lg btn-success">9.5</span></a>
+                    </p>
+                    <a href="#"><img src="img/phone2.jpg" class="main_img img-responsive" alt="..."></a>
+                    <h4 class="text-center"><a href="#">Apple iPhone 5S 16GB</a></h4>
+                    <p>от 15 800 <span class="rouble">Р</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--/span-->
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="col-md-6 col-sm-12 text-left">
+          <p class="text-muted"><a href="#" class="btn btn-default btn-success">Партнерские виджеты</a> <span>Copyright © 2009–2014 Social-mart</span></p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-right">
+          <p class="text-muted hidden-xs"><span>Данные - </span><a class="ya" href="http://ya.ru">Яндекс.Маркет</a> <a class="ico-social fb" href="fb"></a><a class="ico-social vk" href="vk"></a><a class="ico-social tw" href="tw"></a></p>
+          <p class="text-muted visible-xs text-center">
+            <span>Данные - </span><a class="ya" href="http://ya.ru">Яндекс.Маркет</a>
+          </p>
+          <p class="text-muted visible-xs text-center">
+            <a class="ico-social fb" href="fb"></a><a class="ico-social vk" href="vk"></a><a class="ico-social tw" href="tw"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
