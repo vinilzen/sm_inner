@@ -1241,3 +1241,37 @@ ul.list-review {
     }
   }
 }
+
+
+/* new inner page */
+
+.slide-up {
+  position: relative;
+  top: -55px;
+}
+.descr-bordered {
+  border: 1px solid #ebebeb;
+  margin-bottom: 57px;
+  padding: 40px 30px;
+  h3 {
+    margin-top: -5px;
+    font-size: 18px;
+    font-weight: 600;
+    color:#2c2c2c;
+  }
+  ul {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+  }
+}
+
+.fix-height.withoutborder {
+  border: none;  
+  table {
+    border:none;
+    tr, td {
+      border:none;
+    }
+  }
+}
