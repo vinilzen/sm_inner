@@ -405,7 +405,7 @@ h4 a:hover {
 
 /* custom inclusion of left tabs */
 .first-lvl {
-  height: 100%;
+  // height: 100%;
 }
 .tabs-left {
   float: left;
@@ -1136,6 +1136,7 @@ ul.list-review {
   }
   .full-width {
     padding: 0;
+    overflow: hidden;
   }
   .kind-of-review {
     width: 100%;
@@ -1151,6 +1152,7 @@ ul.list-review {
   }
   .compare-head p {
     margin: 0;
+    white-space: nowrap;
   }
   ul.list-review {
     li p span:last-child {
@@ -1271,7 +1273,7 @@ ul.list-review {
 .descr-bordered {
   border: 1px solid #ebebeb;
   margin-bottom: 57px;
-  padding: 40px 30px;
+  padding: 30px;
   h3 {
     margin-top: -5px;
     font-size: 18px;
@@ -1319,6 +1321,23 @@ ul.list-review {
       border-bottom: none;
       display: inline-block;
       padding: 0 9px;
+      &:before {
+        content:' ';
+        display: inline-block;
+        background: url(../img/sort1.png) 0 0 no-repeat;
+        width: 7px;
+        height: 4px;
+        margin-right: 2px;
+        top:-1px;
+        position: relative;
+        opacity: 0.8;
+      }
+      &.sort-up:before {
+        background-position: right top;
+      }
+      &.sort-down:before { 
+        background-position: left top;
+      }
     }
   }
 }
@@ -1358,7 +1377,6 @@ ul.list-review {
 
 .tbl-head {
   font-size: 13px;
-  padding-left: 25px;
 }
 .sort-panel {
   font-size: 13px;
@@ -1367,5 +1385,10 @@ ul.list-review {
 @media (min-width: $screen-sm-min) {
   .gadget_description h4 {
     padding-top: 20px;
+  }
+}
+@media (min-width: $screen-sm-min) {
+  .top-table {
+    padding-right: 0;
   }
 }

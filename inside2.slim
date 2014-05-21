@@ -1,19 +1,18 @@
 html lang="en" 
   head
     meta charset="utf-8" 
-      meta content="IE=edge" http-equiv="X-UA-Compatible" 
-        meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" 
-          meta content="" name="description" 
-            meta content="" name="author" 
-              link href="./favicon.ico" rel="icon" type="image/x-icon" 
-                title Social Mart Inside
-                /! Bootstrap core CSS
-                link href="css/main.min.css" rel="stylesheet" 
-                  link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" 
-                    /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
-                    /![if lt IE 9]
-                      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-                      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" 
+    meta content="" name="description" 
+    meta content="" name="author" 
+    link href="./favicon.ico" rel="icon" type="image/x-icon" 
+    title Social Mart Inside
+    link href="css/main.min.css" rel="stylesheet" 
+    link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" 
+    /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /![if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   body
     /! Fixed navbar
     .navbar.navbar-default.navbar-fixed-top.custom-bgr role="navigation" 
@@ -93,8 +92,8 @@ html lang="en"
                       th.col-md-7.popover-width collspan="2"
                         p.sort-panel
                           | Сортировать по: 
-                          a href="#" class="sort sortbyprice" цене 
-                          a href="#" class="sort sortbyrank" рейтингу
+                          a.sort.sortbyprice.sort-up href="#" class="" цене 
+                          a.sort.sortbyrank.sort-down href="#" рейтингу
                       th.col-md-2
                         span.tbl-head Доставка
                       th.col-md-2
@@ -403,11 +402,11 @@ html lang="en"
           .row.tabs-row
             .col-md-12.full-width
               ul#reviews.nav.nav-tabs.main-tabs
-                li.active.col-xs-6
+                li.active
                   a data-toggle="tab" href="#home" 
                     | Отзывы 
                     span покупателей
-                li.col-xs-6
+                li
                   a#tag_tab data-toggle="tab" href="#tags" 
                     | Популярные теги
                     span покупателей
